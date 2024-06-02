@@ -11,10 +11,12 @@ export const Results = async ({ term }: ResultsProps) => {
 
   return (
     <div>
-      <h2 className="text-lg font-semibold mb-4">Results for term "{term}"</h2>
+      <h2 className="text-lg font-semibold mb-4">
+        Results for term &quot;{term}&quot;
+      </h2>
       {data.length === 0 && (
         <p className="text-muted-foreground text-sm">
-          Np results found. Try searching for something else
+          No results found. Try searching for something else
         </p>
       )}
       <div className="flex flex-col gap-y-4">
