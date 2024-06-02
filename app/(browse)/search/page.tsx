@@ -15,7 +15,6 @@ const SearchPage = ({ searchParams }: SearchPageProps) => {
   return (
     <div className="h-full p-8 max-w-screen-2xl mx-auto">
       <Suspense fallback={<ResultsSkeleton />}>
-        {/* @ts-expect-error Server Component */}{" "}
         <Results term={searchParams.term} />
       </Suspense>
     </div>

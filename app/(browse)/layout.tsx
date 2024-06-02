@@ -9,7 +9,6 @@ const layout = ({ children }: { children: React.ReactNode }) => {
       <Navbar />
       <div className="flex h-full pt-20">
         <Suspense fallback={<SidebarSkeleton />}>
-          {/* @ts-expect-error Server Component */}
           <Sidebar />
         </Suspense>
         <Container>{children}</Container>
